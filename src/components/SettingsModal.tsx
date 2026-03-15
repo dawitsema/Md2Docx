@@ -1,5 +1,5 @@
 import { X, Type, Code2, AlignLeft, Hash, FileText } from 'lucide-react';
-import type { Settings, FontSize, CodeTheme } from '@/app/page';
+import type { Settings, FontSize, CodeTheme } from '@/types/settings';
 
 interface Props {
   settings: Settings;

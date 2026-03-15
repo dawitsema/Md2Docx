@@ -1,10 +1,11 @@
 "use client"
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Toolbar from '@/components/Toolbar';
 import MarkdownEditor from '@/components/Editor';
 import LivePreview from '@/components/LivePreview';
 import SettingsModal from '@/components/SettingsModal';
+import type { Settings, FontSize } from '@/types/settings';
 import { Sun, Moon, BookOpen, Menu, X, Eye, Code } from 'lucide-react';
 import Link from 'next/link';
 
@@ -33,16 +34,6 @@ function convert() {
 \`\`\`
 `;
 
-export type FontSize = 'small' | 'medium' | 'large';
-export type CodeTheme = 'github' | 'dark' | 'monokai';
-
-export interface Settings {
-  fontSize: FontSize;
-  codeTheme: CodeTheme;
-  wordWrap: boolean;
-  lineNumbers: boolean;
-  exportFilename: string;
-}
 
 const DEFAULT_SETTINGS: Settings = {
   fontSize: 'medium',
