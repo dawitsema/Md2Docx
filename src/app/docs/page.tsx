@@ -70,24 +70,6 @@ export default function DocsPage() {
                 </ul>
               ),
             },
-            {
-              icon: <Globe size={22} />,
-              colorLight: 'bg-blue-100 text-blue-600',
-              colorDark: 'dark:bg-blue-900/30 dark:text-blue-400',
-              title: 'Deploying to Vercel / Netlify',
-              content: (
-                <div className="space-y-3 text-sm sm:text-base text-gray-700 dark:text-gray-300">
-                  <p>See the step-by-step deployment instructions in the <code className="text-xs bg-orange-100 dark:bg-gray-800 px-1 py-0.5 rounded">README.md</code> in the project root.</p>
-                  <ol className="space-y-2 list-decimal list-inside">
-                    <li>Push your project to a <strong>GitHub repository</strong>.</li>
-                    <li>Visit <a href="https://vercel.com" target="_blank" rel="noreferrer" className="text-orange-500 hover:underline font-semibold">vercel.com</a> or <a href="https://netlify.app" target="_blank" rel="noreferrer" className="text-orange-500 hover:underline font-semibold">netlify.app</a></li>
-                    <li>Connect your GitHub account and select your repository.</li>
-                    <li>Vercel auto-detects Next.js — just click <strong>Deploy</strong>.</li>
-                    <li>Your app goes live and future <code className="text-xs bg-orange-100 dark:bg-gray-800 px-1 py-0.5 rounded">git push</code> commands auto-deploy.</li>
-                  </ol>
-                </div>
-              ),
-            },
           ].map(({ icon, colorLight, colorDark, title, content }) => (
             <section key={title} className="bg-white dark:bg-[#0d1117] p-6 sm:p-8 rounded-2xl shadow-md shadow-orange-900/5 dark:shadow-none border border-orange-100 dark:border-gray-800 transition-all hover:shadow-xl hover:-translate-y-0.5 duration-300">
               <div className="flex items-center space-x-3 mb-5">
