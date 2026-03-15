@@ -2,7 +2,7 @@
 
 **Premium Markdown to Word Document Converter**
 
-A fast, beautiful, deployable web app for converting `.md` files to `.docx` with live preview.
+A fast, beautiful web app for converting `.md` files to `.docx` with live preview.
 
 ---
 
@@ -35,4 +35,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📄 License
 
-MIT — free to use and deploy.
+MIT — free to use.
