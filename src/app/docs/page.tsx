@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowLeft, BookOpen, Settings, Zap, Edit3, Github } from 'lucide-react';
+import { ArrowLeft, Settings, Zap, Edit3 } from 'lucide-react';
 
 export default function DocsPage() {
   return (
